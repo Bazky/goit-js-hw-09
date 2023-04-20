@@ -13,7 +13,7 @@ formEl.addEventListener('submit', ev => {
   for (let i = 0; i < amount; i++) {
     createPromise(i + 1, delayEl + i * step)
       .then(({ position, delay }) => {
-        Notiflix.Notify.sucess(
+        Notiflix.Notify.success(
           `✅ Fulfilled promise ${position} in ${delay}ms`
         );
       })
